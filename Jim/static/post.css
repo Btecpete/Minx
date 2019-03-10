@@ -1,3 +1,4 @@
+/* stylesheet for main-template.html */
 /* Post box */
 
 .post-box {
@@ -74,7 +75,7 @@
 
 }
 
-#comment {
+.comment {
     position: relative;
     top: 3%;
     left: 5%;
@@ -90,7 +91,7 @@
     padding-left: 3%;
 }
 
-#reply {
+.reply {
     position: relative;
     top: 3%;
     left: 10%;
@@ -134,7 +135,7 @@
     border-top: 1px solid;
 }
 
-#type-comment {
+.type-comment {
     position: relative;
     top: 50%;
     left: 3%;
@@ -145,7 +146,7 @@
     border: none;
 }
 
-#post {
+.post-comment {
     position: absolute;
     top: 50%;
     right: 17%;
@@ -156,24 +157,24 @@
     text-decoration: none;
 }
 
-#post-reply {
-    position: absolute;
-    top: 50%;
-    right: 17%;
-    transform: translate(0, -40%);
-    font-family: sans-serif;
-    font-size: 2vh;
-    color: #1da1f2;
-    text-decoration: none;
-}
-
-#post:hover {
+.post-comment:hover {
     font-size: 2.5vh;
     color: #1357ae;
     text-decoration: underline;
 }
 
-#img {
+.post-reply {
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translate(0, -40%);
+    font-family: sans-serif;
+    font-size: 2vh;
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.img {
     position: absolute;
     top: 50%;
     right: 2%;
