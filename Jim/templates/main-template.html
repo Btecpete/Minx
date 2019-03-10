@@ -8,34 +8,35 @@
 
  <div class="comment-box box-bg"> <!-- Box around comments -->
      <div class="com-title">Comments</div>
-     <div id="comment">Comment <!-- Comment -->
+     <div class="comment">Comment <!-- Comment -->
          <img src="../photos/utility/d_chevron.png" alt="commenter's profile" class="arrow" id="d"> <!-- dropdown to open replies -->
          <img src="../photos/utility/u_chevron.png" alt="commenter's profile" class="arrow" style="display: none;" id="u"> <!-- dropdown to close replies -->
-         <a id="post-reply" style="right: 25%; top: 40%;">Reply</a> <!-- 'Reply" button -->
-         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" id="img"> <!-- Commenter's profile photo -->
+         <a class="post-reply" style="right: 25%; top: 40%;">Reply</a> <!-- 'Reply" button -->
+         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
      </div>
 
      <div id="replies" style="display: none; position: relative; top: 3%;">
-         <div id="reply">Reply 1 <!-- Nested reply -->
-             <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" id="img"> <!-- Commenter's profile photo -->
+         <div class="reply">Reply 1 <!-- Nested reply -->
+             <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
          </div>
 
-         <div id="reply">Reply 2 <!-- Nested reply -->
-             <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" id="img"> <!-- Commenter's profile photo -->
+         <div class="reply">Reply 2 <!-- Nested reply -->
+             <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
          </div>
      </div>
 
      <div id="add-reply"> <!-- reply to a comment -->
-         <input id="type-comment" style="top: 40%; left: 0%;" type="text" name="" placeholder="Reply Here"> <!-- reply input -->
-         <a href="#" id="post">Post</a>
+         <input class="type-comment" style="top: 40%; left: 0%;" type="text" name="" placeholder="Reply Here"> <!-- reply input -->
+         <a href="#" class="post-comment">Post</a>
+         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- My profile photo -->
      </div>
 
      <br> <!-- break for spacing between comments !IMPORTANT! -->
 
      <div class="new-com">
-         <input id="type-comment" type="text" name="" placeholder="New Comment Here">
-         <a href="#" id="post">Post</a>
-         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" id="img"> <!-- My profile photo -->
+         <input class="type-comment" type="text" name="" placeholder="New Comment Here">
+         <a href="#" class="post-comment">Post</a>
+         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- My profile photo -->
      </div>
  </div>
 
@@ -64,7 +65,7 @@
                 $("#u").hide();
             });
 
-            $("#post-reply").click(function(){
+            $(".post-reply").click(function(){
                 if($('#add-reply').is(':visible')) {
                     $("#add-reply").hide();
                 }
