@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/home.css">
+    <link rel="stylesheet" type="text/css" href="../static/universals.css">
+    <link rel="stylesheet" href="../static/post.css">
+    <title>Home</title>
+
+</head>
+<body>
+    <div class="splitl main-bg">
+    <!-- Main area of screen  -->
+        <div id="reuse"></div>
+    </div>
+
+    <div class="splitr sidebar-bg">
+    <!-- Sidebar -->
+        <a href="/detail"><img src="../photos/utility/l_chevron.png" class="chevron" alt=""></a>
+        <!-- Open/close sidebar chevron -->
+    </div>
+
+    <script src="../js/jquery_PC.js"></script>
+    <script>
+        $ (document).ready(function () {
+            $ ('#reuse').load("../templates/main-template.html");
+        })
+    </script>
+</body>
+</html>

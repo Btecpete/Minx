@@ -1,0 +1,104 @@
+/* Style sheet for detail.html, me.html, intro.html, */
+
+.splitl {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    left: 0;
+    animation-name: home-detail-big;
+    animation-duration: 1s;
+}
+
+@keyframes home-detail-big {
+    from {width: 96%}
+    to {width: 60%}
+}
+
+.splitr {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    right: 0;
+    animation-name: home-detail-small;
+    animation-duration: 1s;
+}
+
+@keyframes home-detail-small {
+    from {width: 4%;}
+    to {width: 40%;}
+}
+
+.centered {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.profile-pho {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: serif;
+    font-weight: bold;
+}
+
+.followers {
+    position: absolute;
+    top: 11%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2px 2px 1px 2px;
+}
+
+.box {
+    position: relative;
+    display: none;
+    transform: translate(-50%, 0);
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    z-index: 2;
+    padding: 5px;
+    color: #8c8c8c;
+    font-family: sans-serif;
+    top: 100px;
+    width: 40%;
+    height: auto;
+}
+
+.box .arrow {
+    border-style: solid;
+    position: absolute;
+}
+
+.top {
+    border-color: transparent transparent rgba(0,0,0,0.6) transparent;
+    border-width: 8px 8px 8px 8px;
+    top: -8px;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.a {
+    left: 25%;
+}
+
+.b {
+    left: 75%;
+}

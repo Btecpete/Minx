@@ -1,0 +1,205 @@
+/* Post box */
+
+.post-box {
+    position: absolute;
+    left: 2.5%;
+    width: 65%;
+    height: 80%;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.postname {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+#post-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -43%);
+    font-family: serif;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+#poster-name {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -43%);
+    font-family: sans-serif;
+    font-size: 2.5vh;
+}
+
+#poster-photo {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    height: 90%;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+}
+
+/* Comments box */
+
+.comment-box {
+    position: absolute;
+    left: 70%;
+    width: 27.5%;
+    height: 80%;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.com-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    border-bottom: 1px solid;
+    line-height: 150%; /* vertically centres text */
+    font-family: serif;
+    font-weight: bold;
+    font-size: 3vh;
+    text-align: center;
+
+}
+
+#comment {
+    position: relative;
+    top: 3%;
+    left: 5%;
+    height: 7%;
+    width: 91.4%;
+    border-bottom: 2px solid #a2a2a2;
+    border-left: 2px solid #a2a2a2;
+    border-bottom-left-radius: 5px;
+    line-height: 245%; /* vertically centres text */
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    text-align: left;
+    padding-left: 3%;
+}
+
+#reply {
+    position: relative;
+    top: 3%;
+    left: 10%;
+    height: 6%;
+    width: 86.7%;
+    border-bottom: 1px solid #a2a2a2;
+    border-left: 1px solid #a2a2a2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    line-height: 245%; /* vertically centres text */
+    font-family: sans-serif;
+    font-size: 2vh;
+    text-align: left;
+    padding-left: 3%;
+}
+
+#add-reply {
+    display: none;
+    position: relative;
+    top: 3%;
+    left: 10%;
+    height: 6%;
+    width: 86.7%;
+    border-bottom: 1px solid #a2a2a2;
+    border-left: 1px solid #a2a2a2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    line-height: 245%; /* vertically centres text */
+    font-family: sans-serif;
+    font-size: 2vh;
+    text-align: left;
+    padding-left: 3%;
+}
+
+.new-com {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    border-top: 1px solid;
+}
+
+#type-comment {
+    position: relative;
+    top: 50%;
+    left: 3%;
+    width: 70%;
+    height: 70%;
+    transform: translate(0, -52%);
+    background: transparent;
+    border: none;
+}
+
+#post {
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translate(0, -40%);
+    font-family: sans-serif;
+    font-size: 2vh;
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+#post-reply {
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translate(0, -40%);
+    font-family: sans-serif;
+    font-size: 2vh;
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+#post:hover {
+    font-size: 2.5vh;
+    color: #1357ae;
+    text-decoration: underline;
+}
+
+#img {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    height: 70%;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    width: 5%;
+    transform: translate(0, -50%);
+}
+
+/* Post Info */
+
+.info-box {
+    position: absolute;
+    left: 2.5%;
+    top: 85%;
+    width: 95%;
+    height: 10%;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
