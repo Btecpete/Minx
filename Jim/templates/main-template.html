@@ -1,62 +1,56 @@
- <div class="post-box box-bg"> <!-- Box around post -->
-     <div class="postname">
-         <div id="post-name">Post Name</div> <!-- Name of post -->
-         <div id="poster-name">Poster's Name</div> <!-- Name of user who posted -->
-         <img src="../photos/profile_pics/default1.jpg" alt="poster's profile" id="poster-photo"> <!-- Profile photo of user who posted -->
-     </div>
- </div>
+<div class="post-box box-bg"> <!-- Box around post -->
+    <div class="postname">
+        <div id="post-name">Post Name</div> <!-- Name of post -->
+        <div id="poster-name">Poster's Name</div> <!-- Name of user who posted -->
+        <img src="../photos/profile_pics/default1.jpg" alt="poster's profile" id="poster-photo"> <!-- Profile photo of user who posted -->
+    </div>
+</div>
 
- <div class="comment-box box-bg"> <!-- Box around comments -->
-     <div class="com-title">Comments</div>
-     <div class="comment">Comment <!-- Comment -->
-         <img src="../photos/utility/d_chevron.png" alt="commenter's profile" class="arrow" id="d"> <!-- dropdown to open replies -->
-         <img src="../photos/utility/u_chevron.png" alt="commenter's profile" class="arrow" style="display: none;" id="u"> <!-- dropdown to close replies -->
-         <a class="post-reply" style="right: 25%; top: 40%;">Reply</a> <!-- 'Reply" button -->
-         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
-     </div>
+<div class="comment-box box-bg"> <!-- Box around comments -->
+    <div class="com-title">Comments</div>
+    <div class="comment">Comment <!-- Comment -->
+        <img src="../photos/utility/d_chevron.png" alt="commenter's profile" class="arrow" id="d"> <!-- dropdown to open replies -->
+        <img src="../photos/utility/u_chevron.png" alt="commenter's profile" class="arrow" style="display: none;" id="u"> <!-- dropdown to close replies -->
+        <a class="post-reply" style="right: 25%; top: 40%;">Reply</a> <!-- 'Reply" button -->
+        <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
+    </div>
 
-     <div id="replies" style="display: none; position: relative; top: 3%;">
-         <div class="reply">Reply 1 <!-- Nested reply -->
-             <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
-         </div>
+    <div id="replies" style="display: none; position: relative; top: 3%;">
+        <div class="reply">Reply 1 <!-- Nested reply -->
+            <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
+        </div>
 
-         <div class="reply">Reply 2 <!-- Nested reply -->
-             <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
-         </div>
-     </div>
+        <div class="reply">Reply 2 <!-- Nested reply -->
+            <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- Commenter's profile photo -->
+        </div>
+    </div>
 
-     <div id="add-reply"> <!-- reply to a comment -->
-         <input class="type-comment" style="top: 40%; left: 0%;" type="text" name="" placeholder="Reply Here"> <!-- reply input -->
-         <a href="#" class="post-comment">Post</a>
-         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- My profile photo -->
-     </div>
+    <div id="add-reply"> <!-- reply to a comment -->
+        <input class="type-comment" style="top: 40%; left: 0%;" type="text" name="" placeholder="Reply Here"> <!-- reply input -->
+        <a href="#" class="post-comment">Post</a>
+        <img src="../photos/profile_pics/default1.jpg" alt="my profile" class="img"> <!-- My profile photo -->
+    </div>
 
-     <br> <!-- break for spacing between comments !IMPORTANT! -->
+    <br> <!-- break for spacing between comments !IMPORTANT! -->
 
-     <div class="new-com">
-         <input class="type-comment" type="text" name="" placeholder="New Comment Here">
-         <a href="#" class="post-comment">Post</a>
-         <img src="../photos/profile_pics/default1.jpg" alt="commenter's profile" class="img"> <!-- My profile photo -->
-     </div>
- </div>
+    <div class="new-com">
+        <input class="type-comment" type="text" name="" placeholder="New Comment Here">
+        <a href="#" class="post-comment">Post</a>
+        <img src="../photos/profile_pics/default1.jpg" alt="my profile" class="img"> <!-- My profile photo -->
+    </div>
+</div>
 
- <div class="info-box box-bg"> <!-- Box around info -->
+<div class="info-box box-bg"> <!-- Box around info -->
 
- </div>
+</div>
 
- <script src="../js/jquery_PC.js"></script>
-    <script>
+<script src="../js/jquery_PC.js"></script>
+<script>
         $ (document).ready(function () {
             $("#d").click(function(){
                 $("#replies").show();
                 $("#u").show();
                 $("#d").hide();
-            });
-
-            $("#u").click(function(){
-                $("#replies").hide();
-                $("#d").show();
-                $("#u").hide();
             });
 
             $("#u").click(function(){
@@ -74,4 +68,4 @@
                 }
             });
         })
-    </script>
+</script>

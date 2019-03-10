@@ -26,6 +26,8 @@
                 <div class="followers" style="left: 75%;" id="fli">Following 1234</div>
             </div>
 
+            <a class="add-post">Add Post</a>
+
             <!-- Followed by dropdown -->
             <div class="box a">
                 <div class="arrow top"></div>
@@ -41,13 +43,29 @@
             <!-- Following dropdown -->
             <div class="box b">
                 <div class="arrow top"></div>
-                <p id="info">Following:</p>
+                <p>Following:</p>
                 <hr>
                 <p>User Name</p>
                 <hr>
                 <p>User Name</p>
                 <hr>
                 <p>User Name</p>
+            </div>
+
+            <!-- make post popup -->
+            <div class="box c">
+                <h2 class="c-title">New Post</h2>
+                <p class="c-info">Post Type:</p>
+                <a class="c-btn" id="text" style="top: 11px;">Text</a>
+                <a class="c-btn" id="picture" style="display: none; top: 11px;">Picture</a>
+                <textarea class="new-text" placeholder="Type Here"></textarea>
+                <div id="pict" style="display: none">
+                    <textarea class="new-descrip" placeholder="Type Here"></textarea>
+                    <p class="c-info" style="top: 50px;">Choose Picture:</p>
+                    <a class="c-btn" style="top: 60px; left: 25%; transform: translate(-50%, 0); width: auto;">Choose</a>
+                </div>
+                <a class="c-btn" id="post" style="bottom: 2%; left: 40%; transform: translate(-50%, 0);">Post</a>
+                <a class="c-btn" id="cancel" style="bottom: 2%; left: 60%; transform: translate(-50%, 0);">Cancel</a>
             </div>
 
             <div class="centered">
@@ -90,6 +108,28 @@
                 if($('.a').is(':visible')){
                     $(".a").hide();
                 }
+            });
+
+            $(".add-post").click(function(){
+                $('.c').show();
+            });
+
+            $("#cancel").click(function(){
+                $('.c').hide();
+            });
+
+            $("#text").click(function(){
+                $(this).hide();
+                $('.new-text').hide();
+                $('#pict').show()
+                $('#picture').show();
+            });
+
+            $("#picture").click(function(){
+                $(this).hide();
+                $('#text').show();
+                $('.new-text').show();
+                $('#pict').hide()
             });
         })
     </script>
