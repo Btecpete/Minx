@@ -24,7 +24,7 @@
             </div>
 
             <!-- Followed by dropdown -->
-            <div class="box a">
+            <div class="box x">
                 <div class="arrow top"></div>
                 <p>Followed by:</p>
                 <hr>
@@ -36,7 +36,7 @@
             </div>
 
             <!-- Following dropdown -->
-            <div class="box b">
+            <div class="box y">
                 <div class="arrow top"></div>
                 <p id="info">Following:</p>
                 <hr>
@@ -71,26 +71,26 @@
             },1000);
 
             $("#flo").click(function(){
-                if($('.a').is(':visible')){
-                    $(".a").hide();
+                if($('.x').is(':visible')){
+                    $(".x").hide();
                 }
                 else {
-                    $(".a").show();
+                    $(".x").show();
                 }
-                if($('.b').is(':visible')){
-                    $(".b").hide();
+                if($('.y').is(':visible')){
+                    $(".y").hide();
                 }
             });
 
             $("#fli").click(function(){
-                if($('.b').is(':visible')){
-                    $(".b").hide();
+                if($('.y').is(':visible')){
+                    $(".y").hide();
                 }
                 else {
-                    $(".b").show();
+                    $(".y").show();
                 }
-                if($('.a').is(':visible')){
-                    $(".a").hide();
+                if($('.x').is(':visible')){
+                    $(".x").hide();
                 }
             });
         })

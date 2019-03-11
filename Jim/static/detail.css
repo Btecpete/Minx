@@ -88,17 +88,19 @@ h2 {
 }
 
 .top {
-    border-color: transparent transparent rgba(0,0,0,0.6) transparent;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent rgba(0,0,0,0.8) transparent;
     border-width: 8px 8px 8px 8px;
     top: -8px;
     right: 50%;
     transform: translate(50%, -50%);
 }
 
-.a {
+.x {
     left: 25%;
 }
 
-.b {
+.y {
     left: 75%;
 }
