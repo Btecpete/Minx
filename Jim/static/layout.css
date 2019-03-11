@@ -50,7 +50,7 @@ h2{
   font-size: 16px;
 }
 
-.LoginBox input[type="submit"]
+.LoginBox input[type="button"]
 {
   border: none;
   outline: none;
@@ -62,7 +62,7 @@ h2{
   border-radius: 20px;
 }
 
-.LoginBox input[type="submit"]:hover
+.LoginBox input[type="button"]:hover
 {
   animation: change .5s linear forwards;
 }
@@ -179,7 +179,7 @@ h2{
   font-size: 16px;
 }
 
-.LoginBox1 input[type="submit"]
+.LoginBox1 input[type="button"]
 {
   border: none;
   outline: none;
@@ -191,7 +191,7 @@ h2{
   border-radius: 20px;
 }
 
-.LoginBox1 input[type="submit"]:hover
+.LoginBox1 input[type="button"]:hover
 {
   background: #efed40;
   color: #262626;

@@ -5,8 +5,8 @@ function login () {
     var password = 'hey';
 
     if (user_email === email && user_password === password ) {
-        window.location = "https://google.com"
+        window.location = "http://localhost:63342/Minx/Jim/templates/intro.html?_ijt=e5i721c5svhi1sj823qk7rcal0";
     } else {
-        document.write("Not logged in")
+        document.write("Not logged in");
     }
 }
