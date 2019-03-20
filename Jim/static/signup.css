@@ -15,15 +15,15 @@ h2{
 }
 
 .LoginBox{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
-  height: 420px;
+  height: 460px;
   padding: 80px 40px;
   box-sizing: border-box;
-  background: rgba(0,0,0,.5);
+
 }
 
 .LoginBox p{
@@ -50,7 +50,7 @@ h2{
   font-size: 16px;
 }
 
-.LoginBox input[type="submit"]
+.LoginBox input[type="button"]
 {
   border: none;
   outline: none;
@@ -179,7 +179,7 @@ h2{
   font-size: 16px;
 }
 
-.LoginBox1 input[type="submit"]
+.LoginBox1 input[type="button"]
 {
   border: none;
   outline: none;
@@ -191,7 +191,7 @@ h2{
   border-radius: 20px;
 }
 
-.LoginBox1 input[type="submit"]:hover
+.LoginBox1 input[type="button"]:hover
 {
   background: #efed40;
   color: #262626;
