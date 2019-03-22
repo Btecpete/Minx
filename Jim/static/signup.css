@@ -23,7 +23,7 @@ h2{
   height: 460px;
   padding: 80px 40px;
   box-sizing: border-box;
-
+  background: rgba(0,0,0,.5);
 }
 
 .LoginBox p{
@@ -39,6 +39,7 @@ h2{
 }
 
 .LoginBox input[type="text"],
+.LoginBox input[type="email"],
 .LoginBox input[type="password"]
 {
  border: none;
@@ -149,7 +150,7 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
-  height: 550px;
+  height: 600px;
   padding: 80px 40px;
   box-sizing: border-box;
   background: rgba(0,0,0,.5);
@@ -168,9 +169,10 @@ h2{
 }
 
 .LoginBox1 input[type="text"],
+.LoginBox1 input[type="email"],
 .LoginBox1 input[type="password"]
 {
- border: none;
+  border: none;
   border-bottom: 1px solid #ffffff;
   background: transparent;
   outline: none;

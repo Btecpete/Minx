@@ -12,11 +12,15 @@ const red = '#ff0000';
 function validateUsername() {
     // Checks if username input empty
     checkIfEmpty(username_field);
+    checkIfEmpty(email_field);
+    checkIfEmpty(password_field);
+    checkIfEmpty(conf_pass_field);
+    checkPasswordsMatch()
 }
 
 function checkIfEmpty(field) {
     // Trims white spaces
-    if (isEmpty(field.value.trim)) {
+    if (isEmpty(field.value.trim())) {
         // Field set invalid
         setInvalid(field, `${field.name} cannot be empty`);
         return true
@@ -35,8 +39,15 @@ function setInvalid(field, message) {
     // field.className = "invalid";
     field.nextElementSibling.innerHTML = message;
     field.nextElementSibling.style.color = red;
+    $ (document).ready(function () {
+        $(field).css('border-bottom', '1px solid red')
+    });
 }
 function setValid(field) {
     // field.className = "valid";
     field.nextElementSibling.innerHTML = '';
+    $ (document).ready(function () {
+        $(field).css('border-bottom', '1px solid white')
+    });
 }
+
