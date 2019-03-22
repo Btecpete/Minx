@@ -20,8 +20,9 @@
         <input type="password" id="register_password" name="Password" placeholder="Enter Password">
         <span></span>
         <p> Confirm Password </p>
+        <span></span>
         <input type="password" name="Confirm Password" placeholder="Confirm Password" id="conf_pass">
-        <input type="button" onclick="validateUsername()" value="Sign Up" id="btn-register" placeholder="Sign Up">
+        <input type="button" onclick="validatePassword()" value="Sign Up" id="btn-register" placeholder="Sign Up">
         <p id="l_reg_p1"> Already have an account? <a href="#" id="reg_l"> Login Here </a></p>
     </form>
 </div>
@@ -30,10 +31,12 @@
     <h2>Login</h2>
     <form>
         <p>Email</p>
-        <input type="email" id="login_email" name="" placeholder="Enter Email">
+        <input type="email" id="login_email" name="Email" placeholder="Enter Email">
+        <span></span>
         <p>Password</p>
-        <input type="password" id="password" name="" placeholder="Enter Password">
-        <input type="button" value="Login" id="btn" name="" placeholder="Sign In">
+        <input type="password" id="login_password" name="Password" placeholder="Enter Password">
+        <span></span>
+        <input type="button" onclick="validateInputsLogin()" value="Login" id="btn" name="" placeholder="Sign In">
         <a id="forgot" href="#">Forgot Password?</a> <p id="l_reg_p"> Not signed up?
         <a id="l_reg"> Register Here </a></p>
     </form>
