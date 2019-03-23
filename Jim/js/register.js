@@ -28,11 +28,15 @@ function validateInputsLogin() {
 
 function validatePassword() {
     // Checks if password field is empty
-    checkIfEmpty(password_field);
-    // Checks if password meets length requirements
-    !meetLength(password_field, 6, 100);
-    // Create password security requirements e.g. at least 1 number
-    !containCharacters(password_field, 1);
+    if (checkIfEmpty(password_field) === false) {
+        // Checks if password meets length requirements
+        if (meetLength(password_field, 6, 100) === true){
+            // Create password security requirements e.g. at least 1 number
+            // The number in the 'code' part represents case, check the switch statement to select desired password
+            // requirements. 
+            !containCharacters(password_field, 4);
+        }
+    }
 }
 
 function checkIfEmpty(field) {
@@ -52,6 +56,7 @@ function isEmpty(value) {
     // Returns true if value = whitespace, false if false
     return value === '';
 }
+// Function that sets a field to invalid
 function setInvalid(field, message) {
     // field.className = "invalid";
     field.nextElementSibling.innerHTML = message;
@@ -60,6 +65,7 @@ function setInvalid(field, message) {
         $(field).css('border-bottom', '1px solid red')
     });
 }
+// Function that sets a field to valid
 function setValid(field) {
     // field.className = "valid";
     field.nextElementSibling.innerHTML = '';
@@ -68,6 +74,7 @@ function setValid(field) {
     });
 }
 
+// Function checks whether password length is valid
 function meetLength(field, minLength, maxLength) {
     if (field.value.length >= minLength && field.value.length < maxLength) {
         setValid(field);
@@ -81,6 +88,7 @@ function meetLength(field, minLength, maxLength) {
     }
 }
 
+// Different password requirements. Any can be set in the containCharacters() function
 function containCharacters(field, code) {
     let regEx;
     switch (code) {
@@ -88,11 +96,25 @@ function containCharacters(field, code) {
             // Letters
             regEx = /(?=.*[a-zA-Z])/;
             return matchWithRegEx(regEx, field, `Must contain at least 1 letter`);
+        case 2:
+            // Letters and numbers
+            regEx = /(?=.*\d)(?=.*[a-zA-Z])/;
+            return matchWithRegEx(regEx, field, "Must contain at least 1 letter and 1 number");
+        case 3:
+            // Uppercase, lowercase and numbers
+            regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
+            return matchWithRegEx(regEx, field, "Must contain at least 1 uppercase, 1 lower case and 1 number");
+        case 4:
+            // Uppercase, lowercase, numbers and special character
+            regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/;
+            return matchWithRegEx(regEx, field, "Must contain at least 1 uppercase," +
+                " 1 lower case, 1 number and 1 special character");
         default:
             return false;
     }
 }
 
+// Function that matches value to regular expression to see if requirements filled out
 function matchWithRegEx(regEx, field, message) {
     if (field.value.match(regEx)){
         setValid(field);
