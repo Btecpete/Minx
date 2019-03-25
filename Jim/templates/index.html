@@ -45,11 +45,13 @@
     <a href="layout.html" id="login"> Login </a>
     <a href="signup.html" id="signup"> Sign Up </a>
 </div>
+<script src="../js/pouchdb-7.0.0.min.js"></script>
 <script src="../js/jquery_PC.js"></script>
 <script>
     $ (document).ready(function () {
         $ ('video').delay(8000).fadeOut(500)
     });
+    var db = new PouchDB('sample');
 </script>
 </body>
 </html>

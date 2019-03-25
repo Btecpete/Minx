@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../static/universals.css">
     <link rel="stylesheet" href="../static/post.css">
     <link rel="stylesheet" href="../static/intro.css">
+    <link rel="stylesheet" href="../static/me.css">
     <title>Welcome</title>
 
 </head>
@@ -17,24 +18,34 @@
 
 <div class="splitr sidebar-bg">
     <!-- Right hand side of screen: user info -->
-    <div class="centered">
-        <img src="../photos/profile_pics/default1.jpg" class="profile-pho" alt="Profile Photo">
-        <h2>User Name</h2>
-        <p>User Bio</p>
-        <p>User Posts</p>
-        <!-- User info, inc. profile photo -->
+    <div style="visibility: hidden;" id="rhs">
+        <!-- Right hand side of screen: user info -->
+        <a href="/home"><img src="../photos/utility/back.png" class="back" alt="Back"></a>
+        <a href="/settings"><img src="../photos/utility/cog.png" class="cog" alt="Cog"></a>
+        <div>
+            <!-- Number of followers and following -->
+            <div class="followers" style="left: 25%;" id="flo">Followers 1234</div>
+            <div class="followers" style="left: 75%;" id="fli">Following 1234</div>
+        </div>
+
+        <a class="add-post">Add Post</a>
+
+        <div class="centered">
+            <!-- Info about user -->
+            <img src="../photos/profile_pics/default1.jpg" class="profile-pho" alt="Profile Photo">
+            <h2>My Name</h2>
+            <p>My Bio</p>
+        </div>
     </div>
-    <img src="../photos/utility/r_chevron.png" class="chevron" alt="">
-    <!-- Open/close sidebar chevron -->
 </div>
 
 <div class="box done" id="begin" style="display: block; height: 22%">
     <p class="info">Welcome to ShadoWeb. To start, we'd like to show you a bit about our site. You can skip this tutorial if you want to, but if not, simply click the tick once you're done.</p>
     <div class="done-btn" id="start">
-        <a id="cent"> OK, show me!</a>
+        <a class="cent"> OK, show me!</a>
     </div>
     <div class="more-btn">
-        <a id="cent" href="/detail">Skip tutorial</a>
+        <a class="cent" href="/detail">Skip tutorial</a>
     </div>
 </div>
 
@@ -63,7 +74,7 @@
 </div>
 
 <div class="box e" id="5">
-    <div class="arrow bottom"></div>
+    <div class="arrow top"></div>
     <img src="../photos/utility/tick.png" class="tick" alt="next">
     <p class="info">Add your own comment here.</p>
 </div>
@@ -83,10 +94,10 @@
 <div class="box done" id="8">
     <p id="info">Well done, you've got to the end of this demo. You can come back here or find more information about how to use this site under the cog we just showed you.</p>
     <div class="done-btn">
-        <a id="cent" href="/detail"> OK, got it! </a>
+        <a class="cent" href="/detail"> OK, got it! </a>
     </div>
     <div class="more-btn">
-        <a id="cent" href="/settings"> Show me more </a>
+        <a class="cent" href="/settings"> Show me more </a>
     </div>
 </div>
 
@@ -95,6 +106,10 @@
     <script>
         $(document).ready(function(){
             $ ('#reuse').load('../templates/main-template.html');
+
+            setTimeout(function(){
+                document.getElementById('rhs').style.visibility = "visible";
+            },1000);
 
             var current = 1;
 
