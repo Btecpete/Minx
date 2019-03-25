@@ -13,6 +13,7 @@ const password_login = document.getElementById("login_password");
 // Invalid colour
 const red = '#ff0000';
 
+submit_btn.addEventListener("click" , validateConfirmPassword);
 
 function validateInputsRegister() {
     // Checks if register inputs input empty
@@ -33,9 +34,24 @@ function validatePassword() {
         if (meetLength(password_field, 6, 100) === true){
             // Create password security requirements e.g. at least 1 number
             // The number in the 'code' part represents case, check the switch statement to select desired password
-            // requirements. 
-            !containCharacters(password_field, 4);
+            // requirements.
+            if (containCharacters(password_field, 4)) {
+                return true
+            }
         }
+    }
+}
+
+
+function validateConfirmPassword() {
+    // If validation
+    if (validatePassword() !== true) {
+        setInvalid(conf_pass_field, "Password must be valid");
+    }
+    if (password_field.value !== conf_pass_field.value) {
+        setInvalid(conf_pass_field, "Passwords must match")
+    } else {
+        setValid(conf_pass_field)
     }
 }
 
@@ -124,4 +140,3 @@ function matchWithRegEx(regEx, field, message) {
         return false;
     }
 }
-
