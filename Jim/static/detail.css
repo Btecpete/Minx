@@ -2,7 +2,7 @@
 
 .splitl {
     height: 100%;
-    width: 60%;
+    width: 88.5%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -15,7 +15,7 @@
 
 @keyframes home-detail-big {
     from {width: 96%}
-    to {width: 60%}
+    to {width: 88.5%}
 }
 
 .splitr {
@@ -93,7 +93,7 @@ h2 {
     border-color: transparent transparent rgba(0,0,0,0.8) transparent;
     border-width: 8px 8px 8px 8px;
     top: -8px;
-    right: 50%;
+    left: 50%;
     transform: translate(50%, -50%);
 }
 

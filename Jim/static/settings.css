@@ -1,37 +1,8 @@
-.splitl {
-    height: 100%;
-    width: 60%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    left: 0;
-}
-
-.splitr {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-color: #ffffff;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    right: 0;
-    animation-name: detail-set-small;
-    animation-duration: 1s;
-}
-
-@keyframes detail-set-small {
-    from {width: 40%; background-color: #a2a2a2;}
-    to {width: 100%; background-color: #ffffff;}
-}
-
 .title {
-    font-family: serif;
+    font-family: sans-serif;
     font-weight: bold;
     font-size: 60px;
-    color: #1357ae;
+    color: #a2a2a2;
     position: absolute;
     top: -2%;
     left: 5%;
@@ -49,53 +20,41 @@
 }
 
 .box {
-    width: 40%;
-    height: 80%;
+    width: 47%;
+    height: 85%;
     position: absolute;
-    top: 51%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(#1368e2, transparent);
-    border-radius: 3px;
+    top: 12%;
 }
 
 .lw {
-    left: 25%;
+    left: 2.5%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .lc {
-    left: 70%;
+    right: 2.5%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-.box-i {
-    width: 99%;
-    height: 99.4%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(#a2a2a2, white);
-    border-radius: 2px;
-}
-
-#list-elem {
+.list-elem {
     position: absolute;
     left: 2%;
     font-family: sans-serif;
     font-size: 20px;
-    transform: translate(0, -50%);
 }
 
-#info-elem {
+.info-elem {
     position: absolute;
     left: 2%;
     font-family: sans-serif;
     font-style: italic;
     font-size: 13px;
     color: #5d5d5d;
-    transform: translate(0, -50%);
 }
 
-#photo-elem {
+.photo-elem {
     width: 5%;
     border-radius: 50%;
     left: 2%;
@@ -103,7 +62,7 @@
     transform: translate(0, -50%);
 }
 
-#set-elem {
+.set-elem {
     position: absolute;
     left: 4%;
     font-family: sans-serif;
@@ -111,7 +70,7 @@
     transform: translate(0, -50%);
 }
 
-#edit-elem {
+.edit-elem {
     font-family: sans-serif;
     color: #000000;
     position: absolute;

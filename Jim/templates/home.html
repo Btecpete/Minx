@@ -17,7 +17,11 @@
 
     <div class="splitr sidebar-bg">
     <!-- Sidebar -->
-        <a href="/detail"><img src="../photos/utility/l_chevron.png" class="chevron" alt=""></a>
+        <a style="visibility: hidden;" id="me" href="me.html">
+            <img src="../photos/profile_pics/default1.jpg" class="me-pho" alt="">
+            <p class="me-txt">ME</p>
+        </a>
+        <a href="detail.html"><img src="../photos/utility/l_chevron.png" class="chevron" alt=""></a>
         <!-- Open/close sidebar chevron -->
     </div>
 
@@ -25,6 +29,10 @@
     <script>
         $ (document).ready(function () {
             $ ('#reuse').load("../templates/main-template.html");
+
+            setTimeout(function(){
+                document.getElementById('me').style.visibility = "visible";
+            },1000);
         })
     </script>
 </body>
