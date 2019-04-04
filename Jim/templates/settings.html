@@ -8,44 +8,42 @@
     <title>Settings</title>
 
 </head>
-<body>
-     <div class="splitl main-bg">
-     <!-- Needed for animation to look smooth, not actually visible -->
-         <div id="reuse"></div>
-    </div>
-
-    <div class="splitr">
-    <!-- Fills entire screen -->
-        <a href="/me"><img src="../photos/utility/back.png" class="back" alt="Back"></a>
-        <p class="title">Settings</p>
-        <div class="box lw">
-            <div class="box-i">
-                <strong class="subtitle">Profile</strong>
+<body class="main-bg">
+        <a href="me.html"><img src="../photos/utility/back.png" class="back" alt="Back"></a>
+        <p class="title title-colour">Settings</p>
+            <div class="box lw box-bg">
+                <strong class="subtitle title-colour">Profile</strong>
 
                 <!-- Name change -->
                 <div>
-                    <p id="list-elem" style="top: 6%;">Name</p>
-                    <p id="info-elem" style="top: 11.5%;">Your username is /username/. This cannot be changed, but the name others see can.</p>
-                    <input id="edit-elem" style="top: 18%; width: 20%;" type="text" placeholder="New Username">
-                    <a id="name-chg" class="submit" style="top: 18.2%; left: 27%;" href="#">Change</a>
+                    <p class="list-elem" style="top: 5%;">Name</p>
+                    <p class="info-elem" style="top: 10%;">Your username is /username/. This cannot be changed, but the name others see can.</p>
+                    <input class="edit-elem" style="top: 18%; width: 20%;" type="text" placeholder="New Username">
+                    <a id="name-chg" class="submit" style="top: 18%; left: 27%;" href="#">Change</a>
                 </div>
 
                 <!-- Profile photo change -->
                 <div>
-                    <p id="list-elem" style="top: 22%;">Profile Photo</p>
-                    <p id="info-elem" style="top: 27.5%;">Your current profile photo is below. You can change it here.</p>
-                    <img src="../photos/profile_pics/default1.jpg" alt="Profile Photo" id="photo-elem" style="top:34%;">
-                    <a id="pho-chg" class="submit" style="top: 34%; left: 8%;" href="#">Change</a>
+                    <p class="list-elem" style="top: 20%;">Profile Photo</p>
+                    <p class="info-elem" style="top: 25%;">Your current profile photo is below. You can change it here.</p>
+                    <img src="../photos/profile_pics/default1.jpg" alt="Profile Photo" class="photo-elem" style="top:33%;">
+                    <a id="pho-chg" class="submit" style="top: 33%; left: 8%;" href="#">Change</a>
                 </div>
 
                 <!-- Bio change -->
                 <div>
-                    <p id="list-elem" style="top: 38%;">Bio</p>
-                    <p id="info-elem" style="top: 43.5%;">Your bio is the short description of you and it's the first thing others see.</p>
-                    <a id="b-chg" class="submit" style="top: 50.2%;" href="#">Change</a>
+                    <p class="list-elem" style="top: 36%;">Bio</p>
+                    <p class="info-elem" style="top: 41%;">Your bio is the short description of you and it's the first thing others see.</p>
+                    <a id="b-chg" class="submit" style="top: 48%;" href="#">Change</a>
+                </div>
+
+                <!-- Security settings -->
+                <div>
+                    <p class="list-elem" style="top: 52%;">Security</p>
+                    <p class="info-elem" style="top: 57%;">ShadoWeb cares about your security, so your account security settings are set on 'Strict - Private' by default. You can change it here.</p>
+                    <a id="privacy" class="submit" style="top: 66%;" href="#">Change</a>
                 </div>
             </div>
-        </div>
 
         <!-- Popup for changing Name -->
         <div class="popup" id="nc-pop">
@@ -80,26 +78,35 @@
             </div>
         </div>
 
-        <div class="box lc">
-            <div class="box-i">
-                <strong class="subtitle a">More Information</strong>
+        <!-- Popup for changing security -->
+        <div class="popup" id="sec-pop">
+            <textarea class="new-bio" placeholder="COMING SOON"></textarea>
+            <div class="ok-btn">
+                <a class="cent" href="#"> ----- </a>
+            </div>
+            <div class="no-btn">
+                <a class="cent" href="#"> ----- </a>
+            </div>
+        </div>
+
+            <div class="box lc box-bg">
+                <strong class="subtitle title-colour">More Information</strong>
 
                 <!-- Tutorials -->
                 <div>
-                    <p id="list-elem" style="top: 6%;">Tutorials</p>
-                    <p id="info-elem" style="top: 11.5%;">Our design is unique, so you man need some help using it. We have two tutorials:</p>
-                    <a class="submit" style="top: 18.2%;" href="/intro">Introduction</a>
-                    <a id="tuto-req" class="submit" style="top: 18.2%; left: 25%;" href="#">Tutorial</a>
+                    <p class="list-elem" style="top: 5%;">Tutorials</p>
+                    <p class="info-elem" style="top: 10%;">Our design is unique, so you man need some help using it. We have two tutorials:</p>
+                    <a class="submit" style="top: 18%;" href="intro.html">Introduction</a>
+                    <a id="tuto-req" class="submit" style="top: 18%; left: 25%;" href="tutorial.html">Tutorial</a>
                 </div>
 
                 <!-- Site Info -->
                 <div>
-                    <p id="list-elem" style="top: 20%;">About Us</p>
-                    <p id="info-elem" style="top: 34%;">ShadoWeb was born out of our hate of the spy culture of the internet, where every company is trying to take as much of your data as possible to sell to others. In many cases, the victims don't even know their data has been taken. That is why we founded ShadoWeb. Everything here is totally transparent, and we don't use any data you give to us for any purpose whatsoever (other than for your own profile). To stop you from becoming the victim of identity theft by others, our site's security settings are set on strict by default, so only your friends acn see your posts (unless you choose to change this). ShadoWeb was created by Jej and Danal in 2019.</p>
-                    <a id="priv-pol" class="submit" style="top: 49%;">Privacy Policy</a>
+                    <p class="list-elem" style="top: 20%;">About Us</p>
+                    <p class="info-elem" style="top: 25%;">ShadoWeb was born out of our hate of the spy culture of the internet, where every company is trying to take as much of your data as possible to sell to others. In many cases, the victims don't even know their data has been taken. That is why we founded ShadoWeb. Everything here is totally transparent, and we don't use any data you give to us for any purpose whatsoever (other than for your own profile). To stop you from becoming the victim of identity theft by others, our site's security settings are set on strict by default, so only your friends acn see your posts (unless you choose to change this). ShadoWeb was created by Jej and Danal in 2019.</p>
+                    <a id="priv-pol" class="submit" style="top: 46%;">Privacy Policy</a>
                 </div>
             </div>
-        </div>
 
         <!-- Popup for privacy policy -->
         <div class="popup" id="p-pop" style="width: 30%; height: 22%;">
@@ -108,8 +115,6 @@
                 <a class="cent"  href="#">I agree</a>
             </div>
         </div>
-
-    </div>
 
     <script src="../js/jquery_PC.js"></script>
     <script>
@@ -126,6 +131,10 @@
 
             $("#b-chg").click(function(){
                 $("#b-pop").show();
+            });
+
+            $("#privacy").click(function(){
+                $("#sec-pop").show();
             });
 
             $("#priv-pol").click(function(){

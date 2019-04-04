@@ -5,12 +5,12 @@
 }
 
 .main-bg {
-    background: url("../photos/bg_login.jpg") no-repeat center center fixed #434343;
-    background-size: cover;
+    background-color: #fafaff;
 }
 
 .box-bg {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #a2a2a2;
 }
 
 .chevron {
@@ -18,7 +18,10 @@
     top: 50%;
     height: 20px;
     left: 4px;
+    transform: translate(0, -50%);
 }
 
-/* Below for page animations */
+.title-colour {
+    color: #4b4b4b;
+}
 

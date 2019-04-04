@@ -1,13 +1,13 @@
 <div class="post-box box-bg"> <!-- Box around post -->
     <div class="postname">
-        <div id="post-name">Post Name</div> <!-- Name of post -->
-        <div id="poster-name">Poster's Name</div> <!-- Name of user who posted -->
+        <div id="post-name" class="title-colour">Post Name</div> <!-- Name of post -->
+        <a href="detail.html" id="poster-name">Poster's Name</a> <!-- Name of user who posted -->
         <img src="../photos/profile_pics/default1.jpg" alt="poster's profile" id="poster-photo"> <!-- Profile photo of user who posted -->
     </div>
 </div>
 
 <div class="comment-box box-bg"> <!-- Box around comments -->
-    <div class="com-title">Comments</div>
+    <div class="com-title title-colour">Comments</div>
     <div class="comment">Comment <!-- Comment -->
         <img src="../photos/utility/d_chevron.png" alt="commenter's profile" class="arrow" id="d"> <!-- dropdown to open replies -->
         <img src="../photos/utility/u_chevron.png" alt="commenter's profile" class="arrow" style="display: none;" id="u"> <!-- dropdown to close replies -->
@@ -44,6 +44,22 @@
 
 </div>
 
+<div class="dm-box-cl sidebar-bg"> <!-- DM popup -->
+    <img src="../photos/utility/u_chevron.png" alt="chevron" style="position: absolute; height: 10px; left: 50%; top: 5px; transform: translate(-50%, 0)"> <!-- Chevron -->
+    <p class="direct-txt title-colour">Direct</p>
+    <div class="notification">2</div>
+</div>
+
+<div class="dm-box-main">
+    <div class="dm-box-cl sidebar-bg" style="top: 0; left: 0; height: 48px; width: 100%; border-top-left-radius: 0px"> <!-- DM popup -->
+        <img src="../photos/utility/d_chevron.png" alt="chevron" style="position: absolute; height: 10px; left: 50%; top: 5px; transform: translate(-50%, 0)"> <!-- Chevron -->
+        <p class="direct-txt title-colour" style="top: 15%;">Direct</p>
+    </div>
+    <div class="chat-request">You have 3 chat requests</div>
+    <img src="../photos/utility/r_chevron.png" class="requests-chevron">
+
+</div>
+
 <script src="../js/jquery_PC.js"></script>
 <script>
         $ (document).ready(function () {
@@ -55,6 +71,7 @@
 
             $("#u").click(function(){
                 $("#replies").hide();
+                $("#add-reply").hide();
                 $("#d").show();
                 $("#u").hide();
             });
@@ -65,6 +82,17 @@
                 }
                 else {
                     $("#add-reply").show();
+                }
+            });
+
+            $(".dm-box-cl").click(function(){
+                if($('.dm-box-main').is(':visible')) {
+                    $('.dm-box-main').slideUp(500);
+                    $('.notification').show();
+                }
+                else {
+                    $(".dm-box-main").slideDown(500);
+                    $('.notification').hide();
                 }
             });
         })

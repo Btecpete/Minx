@@ -92,7 +92,7 @@
     width: 10%;
     height: 10%;
     top: 12%;
-    left: 94%;
+    left: 65.5%;
 }
 
 .g {
@@ -134,13 +134,13 @@
     transform: translate(-50%, -50%);
 }
 
-.topr {
+.topl {
     width: 0;
     height: 0;
     border-color: transparent transparent rgba(0,0,0,0.8) transparent;
     border-width: 8px 8px 8px 8px;
     top: -8px;
-    right: 6%;
+    left: 6%;
 }
 
 .info {

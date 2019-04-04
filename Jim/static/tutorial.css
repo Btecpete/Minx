@@ -6,7 +6,7 @@
     width: 40%;
     height: 20%;
     border-radius: 10px;
-    background: #1357ae;
+    background: #1da1f2;
     text-align: center;
 }
 
@@ -18,11 +18,11 @@
     width: 40%;
     height: 20%;
     border-radius: 10px;
-    background: #1357ae;
+    background: #1da1f2;
     text-align: center;
 }
 
-#cent {
+.cent {
     font-family: sans-serif;
     color: #000000;
     text-decoration: none;
@@ -52,10 +52,38 @@
 }
 
 .a {
+    width: 20%;
+    height: 24%;
+    top: 43%;
+    left: 33%;
+}
+
+.b {
+    width: 20%;
+    height: 14%;
+    top: 17%;
+    left: 33%;
+}
+
+.c {
+    width: 20%;
+    height: 20%;
+    top: 80%;
+    left: 33%;
+}
+
+.x {
+    width: 20%;
+    height: 20%;
+    top: 50%;
+    left: 80.5%;
+}
+
+.y {
     width: 22%;
     height: 20%;
     top: 50%;
-    left: 50%;
+    left: 84%;
 }
 
 .done {
@@ -71,14 +99,18 @@
 }
 
 .bottom {
+    width: 0;
+    height: 0;
     border-color: rgba(0,0,0,0.8) transparent transparent transparent;
     border-width: 8px 8px 8px 8px;
-    bottom: -15px;
     right: 50%;
-    transform: translate(50%, 0);
+    bottom: -8px;
+    transform: translate(50%, -50%);
 }
 
 .top {
+    width: 0;
+    height: 0;
     border-color: transparent transparent rgba(0,0,0,0.8) transparent;
     border-width: 8px 8px 8px 8px;
     top: -8px;
@@ -87,6 +119,8 @@
 }
 
 .left {
+    width: 0;
+    height: 0;
     border-color: transparent rgba(0,0,0,0.8) transparent transparent;
     border-width: 8px 8px 8px 8px;
     top: 50%;
@@ -94,14 +128,17 @@
     transform: translate(-50%, -50%);
 }
 
-.topr {
-    border-color: transparent transparent rgba(0,0,0,0.8) transparent;
+.right {
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent rgba(0,0,0,0.8);
     border-width: 8px 8px 8px 8px;
-    top: -16px;
-    right: 6%;
+    top: 50%;
+    right: -8px;
+    transform: translate(50%, -50%);
 }
 
-#info {
+.info {
     color: #c8c8c8;
     text-align: center;
     font-family: sans-serif;

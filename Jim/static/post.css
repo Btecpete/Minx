@@ -1,4 +1,4 @@
-/* stylesheet for main-template.html */
+/* stylesheet for home.html, me.html, detail.html, tutorial.html, intro.html */
 /* Post box */
 
 .post-box {
@@ -6,9 +6,7 @@
     left: 2.5%;
     width: 65%;
     height: 80%;
-    border: 1px solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 5px;
 }
 
 .postname {
@@ -17,7 +15,6 @@
     left: 0;
     height: 7%;
     width: 100%;
-    border-bottom: 1px solid;
 }
 
 #post-name {
@@ -25,7 +22,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -43%);
-    font-family: serif;
+    font-family: sans-serif;
     font-weight: bold;
     font-size: 5vh;
 }
@@ -37,12 +34,14 @@
     transform: translate(0, -43%);
     font-family: sans-serif;
     font-size: 2.5vh;
+    text-decoration: none;
+    color: #000000;
 }
 
 #poster-photo {
     position: absolute;
     top: 50%;
-    left: 1%;
+    left: 0.5%;
     height: 90%;
     border-radius: 50%;
     transform: translate(0, -50%);
@@ -52,12 +51,10 @@
 
 .comment-box {
     position: absolute;
-    left: 70%;
-    width: 27.5%;
-    height: 80%;
-    border: 1px solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    left: 68%;
+    width: 29.5%;
+    height: 85%;
+    border-top-right-radius: 5px;
 }
 
 .com-title {
@@ -66,13 +63,11 @@
     left: 0;
     height: 5%;
     width: 100%;
-    border-bottom: 1px solid;
     line-height: 150%; /* vertically centres text */
-    font-family: serif;
+    font-family: sans-serif;
     font-weight: bold;
     font-size: 3vh;
     text-align: center;
-
 }
 
 .comment {
@@ -132,7 +127,7 @@
     left: 0;
     height: 7%;
     width: 100%;
-    border-top: 1px solid;
+    /*border-top: 1px solid;*/
 }
 
 .type-comment {
@@ -197,10 +192,110 @@
 .info-box {
     position: absolute;
     left: 2.5%;
-    top: 85%;
-    width: 95%;
-    height: 10%;
-    border: 1px solid;
+    top: 84%;
+    width: 65%;
+    height: 11%;
+    border-bottom-left-radius: 5px;
+}
+
+/* DM section */
+
+.dm-box-cl {
+    position: absolute;
+    left: 68%;
+    bottom: 0;
+    width: 29.5%;
+    height: 11%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px
+}
+
+.dm-box-main {
+    position: absolute;
+    display: none;
+    left: 68%;
+    bottom: 0;
+    width: 29.5%;
+    height: 96.75%;
+    background-color: #ffffff;
+    border: 1px solid #a2a2a2;
+    border-top-right-radius: 5px;
+}
+
+.direct-txt {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.notification {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff0000;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.chat-request {
+    position: relative;
+    top: 48px;
+    padding: 3px;
+    left: 0;
+    width: available;
+    border-bottom: 1px solid #a2a2a2;
+    font-family: sans-serif;
+    font-size: 2vh;
+}
+
+.requests-chevron {
+    position: absolute;
+    right: 5px;
+    top: 53px;
+    height: 9px;
+}
+
+/* 'Me' link */
+
+#me {
+    position: absolute;
+    top: 1%;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 80%;
+    height: 9%;
+    border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#me:hover {
+    background-color: #c1c1c1;
+}
+
+.me-pho {
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 90%;
+    border-radius: 50%;
+}
+
+.me-txt {
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    transform: translate(57%, -50%);
+    font-family: sans-serif;
+    width: 70%;
+    color: #000000;
 }
