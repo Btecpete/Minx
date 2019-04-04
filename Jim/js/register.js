@@ -1,3 +1,6 @@
+
+
+
 // Input fields
 // Register
 const username_field = document.getElementById("register_username");
@@ -19,6 +22,8 @@ function validateInputsRegister() {
     // Checks if register inputs input empty
     checkIfEmpty(username_field);
     checkIfEmpty(email_field);
+    validatePassword();
+    validateConfirmPassword();
 }
 
 function validateInputsLogin() {
@@ -41,7 +46,6 @@ function validatePassword() {
         }
     }
 }
-
 
 function validateConfirmPassword() {
     // If validation
