@@ -264,6 +264,12 @@
     height: 9px;
 }
 
+.name {
+    position: relative;
+    width: available;
+    padding: 5px;
+}
+
 /* 'Me' link */
 
 #me {

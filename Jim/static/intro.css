@@ -57,45 +57,38 @@
     width: 15%;
     height: 9%;
     top: 45%;
-    left: 20%;
+    left: 30%;
 }
 
 .b {
     width: 15%;
     height: 9%;
     top: 17%;
-    left: 20%;
+    left: 30%;
 }
 
 .c {
     width: 17.5%;
     height: 9%;
-    top: 92.8%;
+    top: 92.4%;
     left: 20%;
 }
 
 .d {
-    width: 15%;
-    height: 11.5%;
-    top: 38%;
-    left: 50.28%;
-}
-
-.e {
-    width: 15%;
-    height: 9%;
-    top: 90%;
-    left: 50.28%;
-}
-
-.f {
     width: 10%;
     height: 10%;
     top: 12%;
     left: 65.5%;
 }
 
-.g {
+.e {
+    width: 10%;
+    height: 10%;
+    top: 12%;
+    left: 94%;
+}
+
+.f {
     width: 30%;
     height: 12%;
     top: 44%;
@@ -120,8 +113,8 @@
     border-color: transparent transparent rgba(0,0,0,0.8) transparent;
     border-width: 8px 8px 8px 8px;
     top: -8px;
-    right: 50%;
-    transform: translate(50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .left {
@@ -141,6 +134,15 @@
     border-width: 8px 8px 8px 8px;
     top: -8px;
     left: 6%;
+}
+
+.topr {
+    width: 0;
+    height: 0;
+    border-color: transparent transparent rgba(0,0,0,0.8) transparent;
+    border-width: 8px 8px 8px 8px;
+    top: -8px;
+    right: 6%;
 }
 
 .info {
