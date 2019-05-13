@@ -2,7 +2,7 @@
     <div class="postname">
         <div id="post-name" class="title-colour">Post Name</div> <!-- Name of post -->
         <a href="detail.html" id="poster-name">Poster's Name</a> <!-- Name of user who posted -->
-        <img src="../photos/profile_pics/default1.jpg" alt="poster's profile" id="poster-photo"> <!-- Profile photo of user who posted -->
+        <img src="../photos/profile_pics/default1.jpg" alt="poster's profile" class="poster-photo"> <!-- Profile photo of user who posted -->
     </div>
 </div>
 
@@ -44,21 +44,33 @@
 
 </div>
 
-<div class="dm-box-cl sidebar-bg"> <!-- DM popup -->
+<div class="dm-box-cl sidebar-bg"> <!-- DM popup closed -->
     <img src="../photos/utility/u_chevron.png" alt="chevron" style="position: absolute; height: 10px; left: 50%; top: 5px; transform: translate(-50%, 0)"> <!-- Chevron -->
     <p class="direct-txt title-colour">Direct</p>
-    <div class="notification">2</div>
+    <div class="notification">2</div><!-- Red notification bubble -->
 </div>
 
-<div class="dm-box-main">
-    <div class="dm-box-cl sidebar-bg" style="top: 0; left: 0; height: 48px; width: 100%; border-top-left-radius: 0px"> <!-- DM popup -->
+<div class="dm-box-main"> <!-- DM popup open -->
+    <div class="dm-box-cl sidebar-bg" style="top: 0; left: 0; height: 48px; width: 100%; border-top-left-radius: 0">
         <img src="../photos/utility/d_chevron.png" alt="chevron" style="position: absolute; height: 10px; left: 50%; top: 5px; transform: translate(-50%, 0)"> <!-- Chevron -->
         <p class="direct-txt title-colour" style="top: 15%;">Direct</p>
     </div>
     <div class="chat-request">You have 3 chat requests</div>
     <img src="../photos/utility/r_chevron.png" class="requests-chevron" alt="chevron">
-    <div class="name">
-        Hello
+
+    <div style="height: 48px;"></div>
+
+    <div class="unread">
+        <img src="../photos/profile_pics/default1.jpg" alt="messager's profile" class="messager-photo">
+        <div class="test">
+            <p class="messager-name title-colour">User Name</p>
+            <p class="message-preview">Message Preview</p>
+        </div>
+    </div>
+
+    <div class="read">
+        <img src="../photos/profile_pics/default1.jpg" alt="messager's profile" class="messager-photo">
+        <p class="messager-name title-colour">User Name</p>
     </div>
 
 </div>
