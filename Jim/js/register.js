@@ -108,7 +108,7 @@ function meetLength(field, minLength, maxLength) {
     }
 }
 
-// Different password requirements. Any can be set in the containCharacters() function
+// Different password requirements. Any can be set in the containCharacters() function within validatePassword()
 function containCharacters(field, code) {
     let regEx;
     switch (code) {
